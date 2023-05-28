@@ -272,7 +272,7 @@ async def mirror_select(client, callback_query):
     cmd = data.split("^")
     message = query.message
     user_id= query.from_user.id
-    message_id= int(cmd[-1])
+    message_id= reply_message.id
 
     info= listener_dict[message_id] 
     listener= info[0]
